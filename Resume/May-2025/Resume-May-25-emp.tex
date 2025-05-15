@@ -1,0 +1,193 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\setlist[itemize]{label=\textbullet}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+	\vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+	\item\small{
+		{#1 \vspace{-2pt}}
+	}
+}
+
+\newcommand{\resumeSubheading}[4]{
+	\vspace{-2pt}\item
+	\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{\small#3} & \textit{\small #4} \\
+	\end{tabular*}\vspace{-10pt}
+}
+
+\newcommand{\resumeSubSubheading}[5]{
+	\item
+	\begin{tabular*}{0.97\textwidth}{@{}lll@{\extracolsep{\fill}}r@{}}
+		\textbf{#1} & \textbf{: } & \textbf{#2} & \textit{\small #3} \\
+		\textbf{#4} & \textbf{: } & \textbf{#5} & \\
+	\end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[3]{
+	\item
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+		\small#1 & #2 \\
+		\small#3 
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+	\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+	\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+	
+	\begin{center}
+		\textbf{\Huge \scshape Allwyn Joseph G} \\ \vspace{1pt}
+		\small 850-899-7836 $|$ \href{mailto:7allwyn7@gmail.com}{\underline{7allwyn7@gmail.com}} $|$ 
+		\href{https://linkedin.com/in/allwyn7joseph}{\underline{linkedin}} $|$
+		\href{https://allwyn.vercel.app/}{\underline{portfolio}} $|$
+		\small{Immediate Joiner}
+	\end{center}
+	
+	
+	%-----------EDUCATION-----------
+	\section{Education}
+	\resumeSubHeadingListStart
+	\resumeSubheading
+	{Karunya Institute of Technology}{Coimbatore, Tamil Nadu}
+	{Bachelor of Technology in Electronics and Communication}{Jun 2014 -- Jun 2018}
+	\resumeSubHeadingListEnd
+	
+	
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Infosys Limited $|$ Technology Analyst}{Sep 2018 -- Oct 2024}
+{Various Clients in US Real Estate, Waste Management, and Investment Services}{}
+
+\resumeItemListStart
+
+\resumeItem{\textbf{Client: Real Estate Listing Platform (US) (Dec 2021 – Sep 2024):}}
+\resumeItemListStart
+\resumeItem{Created Several REST APIs using Express.js (Node.js) for handling Data migrations using Kafka/SNS/S3 and direct database queries, Quick text based searches using AWS OpenSearch, and invoke PL/SQL Procedures to handle Business Logic for Master Data Management.}
+\resumeItem{Implemented and maintained Integrations with Multiple systems to manage a single source of truth for Customer	Data using Oracle Customer Data Hub (CDH) using AWS DMS, Oracle Data Integrator, Realtime webservice calls}
+\resumeItem{Developed Several PL/SQL stored procedures to handle Business logic in Account creation and Data enrichment and Utilized Oracle Business events to orchestrate update flow between systems through REST Calls	and SQS}
+\resumeItem{Utilized AWS Open Search on indexes created from views from Replicated DB for fast text based Searches on	Account information for over 20 million accounts and used the same for Deduplication processes}
+\resumeItem{Utilized Splunk for logging and Monitoring of Actions/Errors and created alerts using the same}
+\resumeItemListEnd
+
+\resumeItem{\textbf{Client: Waste Management Company (US) (Jul 2021 – Dec 2021):}}
+\resumeItemListStart
+\resumeItem{Worked on Design and development of 10+ Finance/Procurement Reports using Oracle BIP}
+\resumeItem{Worked closely with Clients to get the design down for the reports with RTF/XPT templates}
+\resumeItem{Built optimized Data Model queries that are fast and accurate at org wide level searches}
+\resumeItem{Identified two Critical security risks and provided client with Solution/Work around}
+\resumeItemListEnd
+
+\resumeItem{\textbf{Client: Commercial Real Estate Services Firm (US) (Aug 2020 – Jun 2021):}}
+\resumeItemListStart
+\resumeItem{Defined and documented project requirements with business users.}
+\resumeItem{Designed and optimized SQL queries, triggers, and PL/SQL procedures/functions, followed by thorough testing to ensure reliability and performance.}
+\resumeItem{Created reports using XML Publisher.}
+\resumeItemListEnd
+
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+	%-----------PROJECTS-----------
+	\section{Projects}
+	\resumeSubHeadingListStart
+	\resumeProjectHeading
+	{\textbf{Let's See who This Really Is (LSWTRI)}}{Apr 2025 -- Present}
+	{\emph{(Node.js,Express.js,React,Vite,Cloudflare Workers,Cloudinary,PostgreSQL,GitHub,GitHub Actions)}}
+	\resumeItemListStart
+	\resumeItem{Built a full-stack web application using TypeScript with a React frontend and a serverless backend powered by Cloudflare Workers, proxied through an Express.js layer handling rate limiting and secure request routing.
+	}
+	\resumeItem{Implemented user facing features including report search, abuse report submission with Cloudinary image support (stored temporarily till Approved) and utilised reddit mail for easy delivery to moderators}
+	\resumeItem{Built a moderation dashboard secured with Supabase authentication, featuring validation workflows that ensure only approved reports are persisted to the PostgreSQL database.}
+	\resumeItem{Leveraged Cloudflare Worker Cron Jobs to ensure backend resilience by automatically removing unapproved temporary images regularly.
+	}
+	\resumeItemListEnd
+	\resumeSubHeadingListEnd
+	
+	
+	
+	%
+	%-----------PROGRAMMING SKILLS-----------
+	\section{Technical Skills}
+	\begin{itemize}[leftmargin=0.15in, label={}]
+		\small{\item{
+				\textbf{Languages}{: JavaScript,TypeScript, HTML/CSS, SQL, PL/SQL, PL/pgSQL} \\
+				\textbf{Frameworks and Tools}{: React,  Node.js, Express.js, VS Code, SQL Developer, SQL Loader} \\
+				\textbf{DevOp Tools}{: Git,GitHub,GitHub Actions, Docker, CircleCI, Jenkins, Kafka, Splunk, Swagger,AWS(DMS, OpenSearch, S3, Lambda, Step Functions, SNS, SQS)} \\
+				\textbf{Architecture Patterns}{: Microservices, Serverless}\\
+				
+		}}
+	\end{itemize}
+	
+	
+	%-------------------------------------------
+\end{document}
